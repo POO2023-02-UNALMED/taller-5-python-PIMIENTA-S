@@ -6,10 +6,10 @@ class Animal:
     _zona = ""
 
     def __init__(self, nombre, edad, habitat, genero):
-        self.nombre = nombre
-        self.edad = edad
-        self.habitat = habitat
-        self.genero = genero
+        self._nombre = nombre
+        self._edad = edad
+        self._habitat = habitat
+        self._genero = genero
         Animal._totalAnimales += 1
 
     @staticmethod
