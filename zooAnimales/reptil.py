@@ -7,8 +7,8 @@ class Reptil(Animal):
 
     def __init__(self, nombre, edad, habitat, genero, colorEscamas, largoCola):
         super().__init__(nombre, edad, habitat, genero)
-        self.colorEscamas = colorEscamas
-        self.largoCola = largoCola
+        self._colorEscamas = colorEscamas
+        self._largoCola = largoCola
         self._listado.append(self)
 
     @staticmethod

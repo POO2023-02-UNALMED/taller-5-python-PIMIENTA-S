@@ -8,8 +8,8 @@ class Mamifero(Animal):
 
     def __init__(self, nombre, edad, habitat, genero, pelaje = False, patas = 0):
         super().__init__(nombre, edad, habitat, genero)
-        self.pelaje = pelaje
-        self.patas = patas
+        self._pelaje = pelaje
+        self._patas = patas
         self._listado.append(self)
 
     @staticmethod

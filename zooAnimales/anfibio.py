@@ -8,8 +8,8 @@ class Anfibio(Animal):
 
     def __init__(self, nombre, edad, habitat, genero, colorPiel, venenoso):
         super().__init__(nombre, edad, habitat, genero, )
-        self.colorPiel = colorPiel
-        self.venonoso = venenoso
+        self._colorPiel = colorPiel
+        self._venonoso = venenoso
         self._listado.append(self)
 
     @staticmethod
