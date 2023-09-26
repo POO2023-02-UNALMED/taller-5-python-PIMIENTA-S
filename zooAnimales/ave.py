@@ -27,6 +27,9 @@ class Ave(Animal):
     def cantidadAves():
         return len(Ave._listado)
 
+    def getHabitat(self):
+        return super().getHabitat()
+
     @staticmethod
     def movimiento():
         return "volar"
