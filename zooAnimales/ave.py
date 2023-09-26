@@ -34,10 +34,12 @@ class Ave(Animal):
     def movimiento():
         return "volar"
 
-    @classmethod
-    def crearHalcol(cls, nombre, edad, genero):
-        cls(nombre, edad, "montaña", genero, "cafe glorioso")
-        cls.halcones += 1
+    @staticmethod
+    def crearHalcon(nombre, edad, genero):
+        colorPlumas = "cafe glorioso"
+        habitat = "montanas"
+        Ave(nombre, edad, habitat, genero, colorPlumas)
+        Ave.halcones += 1
 
     @classmethod
     def crearAguila(cls, nombre, edad, genero):
